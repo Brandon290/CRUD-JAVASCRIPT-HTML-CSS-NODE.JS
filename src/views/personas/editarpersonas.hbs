@@ -1,0 +1,39 @@
+<div class="container">
+    <h1>Registrar persona</h1>
+    <div class="card">
+        <div class="card-header">
+            Registrar
+        </div>
+        <div class="card-body">
+            <form action="/editarpersonas/{{data.Id_Usuario}}" method="POST">
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="Id_Usuario" value="{{data.Id_Usuario}}" readonly
+                        placeholder="1">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control"  name="Nombre" value="{{data.Nombre}}" 
+                        placeholder="Name">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="Direccion" value="{{data.Direccion}}" 
+                        placeholder="Calle # apt">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="Sexo" value="{{data.Sexo}}" 
+                        placeholder="M/F">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="Telefono" value="{{data.Telefono}}" 
+                        placeholder="30483471">
+                </div>
+                </div>
+                <div class="mb-3">
+                
+                        <button class="form-control btn btn-primary">Actualizar</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+</div>

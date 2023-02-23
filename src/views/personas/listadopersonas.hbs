@@ -1,0 +1,38 @@
+<br>
+<br>
+<div class="container">
+
+    <h1>lista de asociados</h1>
+
+
+
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id_Usuario</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Direccion</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+    <tr>
+      <td>{{Id_Usuario}}</td>
+      <td>{{Nombre}}</td>
+      <td>{{Direccion}}</td>
+      <td>{{Sexo}}</td>
+      <td>{{Telefono}}</td>
+      <td>
+        <a href="editar/{{Id_Usuario}}" class="btn btn-primary">Editar</a>
+        <a href="eliminar/{{Id_Usuario}}" class="btn btn-primary">Eliminar</a>
+      </td>
+
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>
+</div>

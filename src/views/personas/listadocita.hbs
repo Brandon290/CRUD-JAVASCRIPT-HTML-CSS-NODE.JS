@@ -1,0 +1,34 @@
+<br>
+<br>
+<div class="container">
+
+    <h1>lista de citas </h1>
+
+
+
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">cedula</th>
+      <th scope="col">fecha</th>
+      <th scope="col">numero contacto</th>
+      <th scope="col">IPS</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+    <tr>
+      <td>{{cedula}}</td>
+      <td>{{fecha}}</td>
+      <td>{{numero_contacto}}</td>
+      <td>{{ips}}</td>
+      <td>
+        <a href="cancelar/{{cedula}}" class="btn btn-primary">Cancelar cita</a>
+      </td>
+
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>
+</div>
